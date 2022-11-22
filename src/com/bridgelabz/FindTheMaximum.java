@@ -1,6 +1,12 @@
 package com.bridgelabz;
 
-public class FindTheMaximum {
+public class FindTheMaximum<T extends Comparable<T>> {
+    T a1, a2, a3;
+    public FindTheMaximum(T a1, T a2, T a3) {
+        this.a1 = a1;
+        this.a2 = a2;
+        this.a3 = a3;
+    }
 
     public static <T extends Comparable<T>> T maxOfValues(T a1, T a2, T a3) {
         //Generic method to compare any type of data and find maximum
